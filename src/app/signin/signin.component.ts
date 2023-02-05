@@ -44,7 +44,7 @@ export class SigninComponent implements OnInit {
         this.authState.setAuthState(true);
         this.loginForm.reset();
         window.location.reload();
-        this.router.navigate(['login']);
+        this.router.navigate(['profile']);
       },
       (error) => {
         this.errors = error.error;

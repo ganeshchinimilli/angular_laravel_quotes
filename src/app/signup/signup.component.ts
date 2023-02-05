@@ -76,7 +76,7 @@ export class SignupComponent implements OnInit {
         this.NotificationService.showError(this.errors.message,'');
       },
     );
-    this.NgxSpinnerService.show();
+    this.NgxSpinnerService.hide();
     return true;
   }
 }

@@ -27,7 +27,7 @@ export class AuthService {
   signout():Observable<any> {
     return this.http.get<any>(Globalvariables.appUrl+'auth/logout');
   }
-  getProfile():Observable<any> {
-    return this.http.get<any>(Globalvariables.appUrl+'auth/profile');
+  getData():Observable<any> {
+    return this.http.get<any>(Globalvariables.appUrl+'auth/getApi');
   }
 }

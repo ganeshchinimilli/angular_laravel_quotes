@@ -4,29 +4,12 @@
     <button type="button" class="btn btn-success" (click)="refresh()">Refresh</button>
   </div>
   <div class="card-body">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        <div class="carousel-item" *ngFor="let result of UserProfile; let i = index" [ngClass]="{'active': i === 1}">
-         <div class="row d-flex justify-content-center align-items-center" >
-          <div class="col col-lg-10 col-xl-8">
-              <div class="card-body p-4">
-                    <p class="pb-2">
-                      {{result.quote}}
-                    </p>
-              </div>
-          </div>
-        </div>
-        </div>
+        <!-- <ol > -->
+          <ol >
+            <li *ngFor="let result of UserProfile; let i = index">{{result.quote}}</li>
+        <!-- </ol> -->
+        </ol>
       </div>
-      <button class="carousel-control-prev bg-white" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next bg-white" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-    </div>
 </div>
 <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
